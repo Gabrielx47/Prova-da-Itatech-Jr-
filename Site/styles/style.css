@@ -1,0 +1,31 @@
+.imagemDeFundo{
+    background-image: url("/images/Hero.webp");
+    background-size: cover;
+
+    color: #FFFFFF;
+
+    width: 1440px;
+    height: 352px;
+}
+
+#tabelaDeProdutos{
+    background-color: #F5F5F5;
+    justify-content: space-around;
+}
+
+#botaoVerConsoles{
+    background: #2A7AE4;
+    color: #FFFFFF;
+    align-items: center;
+
+    width: 130px;
+    height: 51px;
+
+    border: #2A7AE4;
+    flex-direction: row;
+}
+
+div#detalhes{
+    margin: 152px;
+    gap: 16px;
+}
