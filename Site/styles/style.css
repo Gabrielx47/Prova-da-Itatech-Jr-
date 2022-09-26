@@ -1,11 +1,19 @@
+*{
+    font-family: Raleway;
+}
+
+
 .imagemDeFundo{
     background-image: url("/images/Hero.webp");
-    background-size: cover;
+    background-size: 100% 100%;
 
     color: #FFFFFF;
 
-    width: 1440px;
+    /*width: 100%;*/
+    /*width: 1440px;*/
     height: 352px;
+
+    /*position: relative;*/
 }
 
 #tabelaDeProdutos{
@@ -26,6 +34,40 @@
 }
 
 div#detalhes{
-    margin: 152px;
+    margin: 130px;
+    margin-left: 152px;
     gap: 16px;
+    position: absolute;
+    /*argin-bottom: -1000px;*/
+}
+
+footer{
+    background-color: #EAF2FD;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+
+    height: 381px;
+}
+
+footer#informações{
+   display: inline-block;
+   
+}
+
+footer#imagem{
+    display: inline-block;
+}
+
+footer#contato{
+    display: block;
+}
+
+a{
+    /*color: Define a cor do texto*/
+    color:  #464646;
+
+    /*Text-decoration: define a inserção de underline no texto do link*/
+    text-decoration: none;
+    display: block;
 }
