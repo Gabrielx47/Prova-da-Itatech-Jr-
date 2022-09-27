@@ -61,6 +61,30 @@ footer#imagem{
 
 footer#contato{
     display: block;
+    align-items: center;
+}
+
+label{
+    bottom: -20px;
+    position: relative;
+    color:  #A2A2A2;
+    margin-left: 12px;
+    margin-bottom: 16px;
+}
+
+#campoDeDados{
+    padding-top: 15px;
+    height: 56px;
+    width: 560px;
+    align-self: stretch;
+    background-color: #FFFFFF;
+}
+
+#enviarMensagem{
+    padding: 16px;
+    margin-top: 8px;
+    background-color: #2A7AE4;
+    color: #FFFFFF;
 }
 
 a{
