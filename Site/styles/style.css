@@ -8,12 +8,7 @@
     background-size: 100% 100%;
 
     color: #FFFFFF;
-
-    /*width: 100%;*/
-    /*width: 1440px;*/
     height: 352px;
-
-    /*position: relative;*/
 }
 
 #tabelaDeProdutos{
@@ -33,14 +28,15 @@
     flex-direction: row;
 }
 
-div#detalhes{
-    margin: 130px;
+#detalhes{
     margin-left: 152px;
     gap: 16px;
-    position: absolute;
-    /*argin-bottom: -1000px;*/
+    position: relative;
+    top: 100px;
 }
 
+
+/* CSS relacionado a tag footer : INICIO*/
 footer{
     background-color: #EAF2FD;
     justify-content: space-around;
@@ -50,18 +46,19 @@ footer{
     height: 381px;
 }
 
-footer#informações{
-   display: inline-block;
-   
+
+
+#imagem{
+    width: 151px;
+    height: 39px;
 }
 
-footer#imagem{
-    display: inline-block;
+#informações{
+   display: block;
 }
 
-footer#contato{
+#contato{
     display: block;
-    align-items: center;
 }
 
 label{
@@ -72,12 +69,36 @@ label{
     margin-bottom: 16px;
 }
 
-#campoDeDados{
+.campoDeDados{
     padding-top: 15px;
     height: 56px;
-    width: 560px;
+    width: 500px;
     align-self: stretch;
     background-color: #FFFFFF;
+}
+
+.escreverMensagem{
+    height: 82px;
+}
+
+@media (max-width: 768px){
+    .campoDeDados{
+        padding-top: 15px;
+        height: 56px;
+        width: 365px;
+        align-self: stretch;
+        background-color: #FFFFFF;
+    }
+} 
+
+@media (max-width: 368px){
+    .campoDeDados{
+        padding-top: 15px;
+        height: 56px;
+        width: 300px;
+        align-self: stretch;
+        background-color: #FFFFFF;
+    }
 }
 
 #enviarMensagem{
@@ -95,3 +116,4 @@ a{
     text-decoration: none;
     display: block;
 }
+/* CSS relacionado a tag footer : FIM*/
