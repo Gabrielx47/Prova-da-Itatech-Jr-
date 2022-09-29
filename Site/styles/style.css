@@ -3,6 +3,31 @@
 }
 
 
+/* CSS relacionado a tag header : INICIO*/
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #campoDeBusca{
+        background-color: #F5F5F5;
+        border-radius: 10px;
+
+        height: 40px;
+        width: 393px;
+    }
+
+    #botaoDeLogin{
+        background-color: #FFFFFF;
+        height: 40px;
+        width: 10%;
+
+        color: #2A7AE4;
+        border-color: #2A7AE4;
+    }
+/* CSS relacionado a tag header : FIM*/
+
+
 .imagemDeFundo{
     background-image: url("/images/Hero.webp");
     background-size: 100% 100%;
@@ -45,8 +70,6 @@ footer{
 
     height: 381px;
 }
-
-
 
 #imagem{
     width: 151px;
