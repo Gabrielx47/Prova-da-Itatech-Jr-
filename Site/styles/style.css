@@ -63,12 +63,23 @@
 
 /* CSS relacionado a tag footer : INICIO*/
 footer{
+    display: block;
+}
+
+#parteSuperior{
     background-color: #EAF2FD;
     justify-content: space-around;
     display: flex;
     align-items: center;
 
     height: 381px;
+}
+
+#parteInferior{
+    background-color: #FFFFFF;
+    display: flex;
+
+    flex-direction: column;
 }
 
 #imagem{
@@ -138,5 +149,10 @@ a{
     /*Text-decoration: define a inserção de underline no texto do link*/
     text-decoration: none;
     display: block;
+}
+
+.autor{
+    align-self: center;
+    color: #464646;
 }
 /* CSS relacionado a tag footer : FIM*/
