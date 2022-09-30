@@ -7,6 +7,8 @@
     header{
         display: flex;
         justify-content: space-between;
+
+        align-items: stretch;
     }
 
     #campoDeBusca{
@@ -14,31 +16,31 @@
         border-radius: 10px;
 
         height: 40px;
-        width: 393px;
+        width: 50%;
     }
 
     #botaoDeLogin{
         background-color: #FFFFFF;
         height: 40px;
         width: 10%;
-
-        color: #2A7AE4;
+        
+        margin-left: 2%;
         border-color: #2A7AE4;
+    }
+
+    #linkLogin{
+        color: #2A7AE4;
     }
 /* CSS relacionado a tag header : FIM*/
 
 
+/* CSS relacionado a parte a imagem proximo ao header : INCIO */
 .imagemDeFundo{
     background-image: url("/images/Hero.webp");
     background-size: 100% 100%;
 
     color: #FFFFFF;
     height: 352px;
-}
-
-#tabelaDeProdutos{
-    background-color: #F5F5F5;
-    justify-content: space-around;
 }
 
 #botaoVerConsoles{
@@ -59,32 +61,44 @@
     position: relative;
     top: 100px;
 }
+/* CSS relacionado a parte a imagem proximo ao header : FIM */
 
 
-/* CSS relacionado a tag footer : INICIO*/
+/* CSS relacionado a tabela de produtos : INICIO*/
     #tabelaDeProdutos{
         display: flex;
+
+        /* Os seus itens filho da #tabelaDeProdutos fica organizado em colunas*/
         flex-direction: column;
-        justify-content: space-around;
-        margin-left: 10%;
-        margin-right: 10%;
-        flex-wrap: wrap;
+        
+        background-color: #F5F5F5;
     }
 
     .blocoDeProdutos{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 2%;
+
         display: flex;
-        justify-content: space-between;
-        
+
+        /*stretch: faz com que os itens creçam igualmente*/
+        align-items: stretch;
     }
 
     .cabecalhoBloco{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 5%;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
+        align-items: center;
     }
 
     .produto {
-        width: 15.7%;
+        margin-left: 1%;
+        margin-right: 1%;
+        display: block;
     }
 
     .imgProduto{
@@ -92,20 +106,20 @@
     }
 
     .verTodos{
-        display: flex;
-        justify-content: center;
+        align-self: center;
+        color: #2A7AE4;
     }
 
     .verProduto{
         color: #2A7AE4;
     }
-/* CSS relacionado a tag footer : FIM*/
+/* CSS relacionado a tabela de produtos : FIM*/
 
 
 
 /* CSS relacionado a tag footer : INICIO*/
 footer{
-    display: block;
+    display: block; 
 }
 
 #parteSuperior{
@@ -114,14 +128,11 @@ footer{
     display: flex;
     align-items: center;
 
-    height: 381px;
-}
+    /* Permiti a quebra de linha dos itens*/
+    flex-wrap: wrap;
 
-#parteInferior{
-    background-color: #FFFFFF;
-    display: flex;
-
-    flex-direction: column;
+    padding-bottom: 30px;
+    padding-top: 30px
 }
 
 #imagem{
@@ -149,32 +160,11 @@ label{
     padding-top: 15px;
     height: 56px;
     width: 500px;
-    align-self: stretch;
     background-color: #FFFFFF;
 }
 
 .escreverMensagem{
     height: 82px;
-}
-
-@media (max-width: 768px){
-    .campoDeDados{
-        padding-top: 15px;
-        height: 56px;
-        width: 365px;
-        align-self: stretch;
-        background-color: #FFFFFF;
-    }
-} 
-
-@media (max-width: 368px){
-    .campoDeDados{
-        padding-top: 15px;
-        height: 56px;
-        width: 300px;
-        align-self: stretch;
-        background-color: #FFFFFF;
-    }
 }
 
 #enviarMensagem{
@@ -193,8 +183,54 @@ a{
     display: block;
 }
 
-.autor{
-    align-self: center;
+#parteInferior{
+    background-color: #FFFFFF;
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+}
+
+#autor{
+    color: #464646;
+}
+
+#anoDeConstrucao{
     color: #464646;
 }
 /* CSS relacionado a tag footer : FIM*/
+
+
+/* Media queries definidas para ativar determinadas ações conforme a largura da tela 
+   seja menor que (max é igual a <)*/
+@media (max-width: 768px){
+    .campoDeDados{
+        padding-top: 15px;
+        height: 56px;
+        width: 350px;
+        background-color: #FFFFFF;
+    }
+
+    .desaparece{
+        display: none;
+    }
+} 
+
+@media (max-width: 368px){
+    .campoDeDados{
+        padding-top: 15px;
+        height: 56px;
+        width: 300px;
+        background-color: #FFFFFF;
+    }
+
+    
+    .desaparece{
+        /* O display none remove o item da tela*/
+        display: none;
+    }
+
+    .removido{
+        display: none;
+    }
+}
