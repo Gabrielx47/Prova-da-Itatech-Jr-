@@ -62,6 +62,48 @@
 
 
 /* CSS relacionado a tag footer : INICIO*/
+    #tabelaDeProdutos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 10%;
+        margin-right: 10%;
+        flex-wrap: wrap;
+    }
+
+    .blocoDeProdutos{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .cabecalhoBloco{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .produto {
+        width: 15.7%;
+    }
+
+    .imgProduto{
+        width: 100%;
+    }
+
+    .verTodos{
+        display: flex;
+        justify-content: center;
+    }
+
+    .verProduto{
+        color: #2A7AE4;
+    }
+/* CSS relacionado a tag footer : FIM*/
+
+
+
+/* CSS relacionado a tag footer : INICIO*/
 footer{
     display: block;
 }
