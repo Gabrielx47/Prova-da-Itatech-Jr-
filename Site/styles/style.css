@@ -214,6 +214,16 @@ a{
     .desaparece{
         display: none;
     }
+
+    #botaoEntrar{
+    height: 63px;
+    width: 25%;
+
+    margin-top: 2%;
+
+    color: #FFFFFF;
+    background-color: #2A7AE4;
+}
 } 
 
 @media (max-width: 368px){

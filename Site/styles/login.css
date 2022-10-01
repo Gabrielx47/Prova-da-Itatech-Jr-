@@ -1,0 +1,42 @@
+#cabecalhoLogin{
+    display: flex;
+    justify-content: flex-start;
+
+    padding: 2%;
+}
+
+#dadosDeLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+    position: relative;
+
+    background-color: #E5E5E5;
+}
+
+.campo{
+    background-color: #FFFFFF;
+    color:  #A2A2A2;
+
+    height: 63px;
+    width: 50%;
+
+    margin-top: 2%;
+
+    border-radius: 4px;
+}
+
+#botaoEntrar{
+    height: 63px;
+    width: 50%;
+
+    margin-top: 2%;
+
+    color: #FFFFFF;
+    background-color: #2A7AE4;
+}
+
+
