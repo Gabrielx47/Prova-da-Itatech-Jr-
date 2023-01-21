@@ -2,7 +2,7 @@ name: Build
 on:
   push:
     branches:
-      [develop]
+      [develop, main, master]
   pull_request:
     types: [develop]
 jobs:
